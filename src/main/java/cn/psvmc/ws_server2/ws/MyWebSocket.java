@@ -29,6 +29,6 @@ public class MyWebSocket {
     @OnMessage
     public void OnMessage(Session session, String message) {
         System.out.println(message);
-        session.sendText("Hello Netty!");
+        session.sendText("服务器发送："+message);
     }
 }
